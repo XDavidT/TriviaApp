@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_colors"
+    tools:context=".Game_play"
+    >
+
+
+    <TextView
+        android:id="@+id/question_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/question_background"
+        android:layout_margin="20dp"
+        android:layout_weight="5.5"
+        android:autoSizeMaxTextSize="35dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        tools:textAlignment="center" />
+
+    <RadioGroup
+        android:id="@+id/answers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="25dp"
+        android:layout_weight="4">
+
+        <RadioButton
+            android:id="@+id/answer1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="0.9"
+            android:autoSizeMaxTextSize="25dp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/radio_background"
+            android:button="@android:color/transparent"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/answer2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="0.9"
+            android:autoSizeMaxTextSize="25dp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/radio_background"
+            android:button="@android:color/transparent"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/answer3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="0.9"
+            android:autoSizeMaxTextSize="25dp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/radio_background"
+            android:button="@android:color/transparent"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/answer4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="0.9"
+            android:autoSizeMaxTextSize="25dp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/radio_background"
+            android:button="@android:color/transparent"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textAlignment="center" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/next_q"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_weight="7.5"
+        android:autoSizeMaxTextSize="25dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/button_style"
+        android:fontFamily="sans-serif-smallcaps"
+        android:onClick="check_the_answer"
+        android:text="Next question"
+        android:textColor="@android:color/background_light"
+        />
+
+    <TextView
+        android:id="@+id/counter_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:paddingTop="10dp"
+        android:textAlignment="center" />
+
+</LinearLayout>

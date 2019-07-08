@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_colors"
+    tools:context=".Results">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:autoSizeMaxTextSize="50dp"
+        android:autoSizeTextType="uniform"
+        android:background="#000"
+        android:paddingTop="10dp"
+        android:text="Points Summary"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif-smallcaps"
+        />
+
+    <TextView
+        android:id="@+id/points_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:text="8"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="30dp"
+        android:textAlignment="center"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMaxTextSize="150dp"
+        android:textColor="#9EF349"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:background="@drawable/button_style"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@android:color/background_light"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:onClick="play_again"
+        android:text="Play Again" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_style"
+        android:fontFamily="sans-serif-smallcaps"
+        android:onClick="move_to_leaderboard"
+        android:text="View leaderboard"
+        android:textColor="@android:color/background_light"
+        android:textSize="30dp" />
+
+
+</LinearLayout>
