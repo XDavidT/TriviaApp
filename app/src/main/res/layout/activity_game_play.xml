@@ -14,14 +14,14 @@
         android:id="@+id/question_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/question_background"
         android:layout_margin="20dp"
         android:layout_weight="5.5"
         android:autoSizeMaxTextSize="35dp"
         android:autoSizeTextType="uniform"
+        android:background="@drawable/question_background"
         android:fontFamily="sans-serif-condensed"
         android:gravity="center"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         tools:textAlignment="center" />
 
     <RadioGroup
@@ -44,7 +44,9 @@
             android:background="@drawable/radio_background"
             android:button="@android:color/transparent"
             android:fontFamily="sans-serif-condensed-light"
-            android:textAlignment="center" />
+
+            android:textAlignment="center"
+            android:textColor="@android:color/white"/>
 
         <RadioButton
             android:id="@+id/answer2"
@@ -57,7 +59,8 @@
             android:background="@drawable/radio_background"
             android:button="@android:color/transparent"
             android:fontFamily="sans-serif-condensed-light"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@android:color/white"/>
 
         <RadioButton
             android:id="@+id/answer3"
@@ -70,7 +73,8 @@
             android:background="@drawable/radio_background"
             android:button="@android:color/transparent"
             android:fontFamily="sans-serif-condensed-light"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@android:color/white"/>
 
         <RadioButton
             android:id="@+id/answer4"
@@ -83,7 +87,8 @@
             android:background="@drawable/radio_background"
             android:button="@android:color/transparent"
             android:fontFamily="sans-serif-condensed-light"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@android:color/white"/>
 
     </RadioGroup>
 
@@ -100,8 +105,7 @@
         android:fontFamily="sans-serif-smallcaps"
         android:onClick="check_the_answer"
         android:text="Next question"
-        android:textColor="@android:color/background_light"
-        />
+        android:textColor="#FF0000" />
 
     <TextView
         android:id="@+id/counter_view"

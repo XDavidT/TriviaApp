@@ -44,7 +44,7 @@ public class ServerConnection extends AppCompatActivity {
             DataOutputStream outToServer = null;
             BufferedReader inFromServer = null;
             try {
-                clientSocket = new Socket("192.168.43.108", 10000); //Connect to server
+                clientSocket = new Socket("192.168.0.123", 10000); //Connect to server
             } catch (IOException e) {
                 e.printStackTrace();
             }

@@ -35,7 +35,7 @@
         android:textAlignment="center"
         android:autoSizeTextType="uniform"
         android:autoSizeMaxTextSize="150dp"
-        android:textColor="#9EF349"
+        android:textColor="#FF0000"
         />
 
     <Button
